@@ -1,5 +1,9 @@
 # Bee Audit Operations & Agent Workspace
 
+> **PUBLIC TEST PREVIEW — NOT FOR OPERATIONAL USE.** Use synthetic or
+> de-identified test records only. Read the root [privacy notice](../PRIVACY.md)
+> and [test disclaimer](../DISCLAIMER.md). This is not an operational audit system.
+
 English-language, browser-only front end. Android code is unchanged. No cloud, account, upload, backup or AI API is implemented in this version. Nothing is deployed. Agent execution is an explicitly labelled local simulator, not a working AI backend.
 
 ## Run

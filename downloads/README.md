@@ -1,5 +1,11 @@
 # Android test APK
 
+> **PUBLIC TEST PREVIEW — NOT FOR OPERATIONAL USE.** Use a test device and
+> synthetic/de-identified records only. Do not rely on this APK for actual audits,
+> certification or business decisions. Read [DISCLAIMER.md](../DISCLAIMER.md) and
+> [PRIVACY.md](../PRIVACY.md). This historical APK has not been rebuilt to display
+> these new public-preview notices inside the app.
+
 `BeeAudit-debug-2026-06-25.apk` is a copy of the existing local debug build from
 25 June 2026. It is not a new Android build or a production-signed release.
 Package: `nz.beeaudit.app`, version name `0.1.0`, version code `1`, Android 6.0+

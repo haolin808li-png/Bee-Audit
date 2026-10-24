@@ -1,5 +1,8 @@
 # Local workbench deployment
 
+> **Public test preview only. Not for operational use or public-service hosting.**
+> Read [the test disclaimer](../DISCLAIMER.md) and [privacy notice](../PRIVACY.md).
+
 This serves the English frontend and its browser-local Agent simulator. It does
 not create an Agent backend, connect model APIs or upload evidence. Nothing has
 been deployed to a cloud account.
