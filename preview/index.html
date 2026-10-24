@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bee Audit 本地预览</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="phone-shell" aria-label="Bee Audit app preview">
+    <section class="app-screen">
+      <header class="top">
+        <div>
+          <h1>Bee Audit</h1>
+          <p id="hiveLabel">Hive 0001</p>
+        </div>
+        <div class="stepper" aria-label="Hive sequence">
+          <button id="prevSeq" type="button" aria-label="Previous sequence">-</button>
+          <strong id="seqValue">0001</strong>
+          <button id="nextSeq" type="button" aria-label="Next sequence">+</button>
+        </div>
+      </header>
+
+      <section class="card fields">
+        <label>
+          <span>PIN / KPIN</span>
+          <input id="pin" value="KPIN1234" autocomplete="off">
+        </label>
+        <label>
+          <span>Group</span>
+          <input id="group" value="Hive" autocomplete="off">
+        </label>
+      </section>
+
+      <section class="gps">
+        <div class="gps-icon">⌖</div>
+        <div>
+          <strong>No GPS fix yet</strong>
+          <p>Record will save without coordinates.</p>
+        </div>
+      </section>
+
+      <section class="card capture">
+        <div class="row">
+          <div class="label-with-icon">
+            <span class="icon">ϟ</span>
+            <strong>Forced flash</strong>
+          </div>
+          <label class="switch">
+            <input id="flash" type="checkbox" checked>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="chips">
+          <span id="photoChip">0 photos</span>
+          <span id="voiceChip">0 voice notes</span>
+        </div>
+
+        <code id="nextFile">KPIN1234_Hive_0001_01.jpg</code>
+
+        <button id="photoButton" class="primary action" type="button">
+          <span>▣</span>
+          Take photo
+        </button>
+        <button id="voiceButton" class="secondary action" type="button">
+          <span>●</span>
+          Record voice note
+        </button>
+      </section>
+
+      <section class="card form">
+        <h2>Hive check</h2>
+        <div class="row">
+          <strong>Hive present</strong>
+          <label class="switch">
+            <input id="present" type="checkbox" checked>
+            <span></span>
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Condition</legend>
+          <div class="options" data-group="condition">
+            <button type="button" class="selected">Good</button>
+            <button type="button">Fair</button>
+            <button type="button">Poor</button>
+            <button type="button">Missing</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bee activity</legend>
+          <div class="options" data-group="activity">
+            <button type="button" class="selected">High</button>
+            <button type="button">Medium</button>
+            <button type="button">Low</button>
+            <button type="button">None</button>
+          </div>
+        </fieldset>
+
+        <div class="row">
+          <strong>Damage visible</strong>
+          <label class="switch">
+            <input id="damage" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <label>
+          <span>Notes</span>
+          <textarea id="notes" rows="3">Strong entrance activity.</textarea>
+        </label>
+      </section>
+
+      <button id="saveNext" class="save" type="button">✓ Save and next hive</button>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
